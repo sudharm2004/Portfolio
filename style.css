@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+:root{
+    --content-font : 48px;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-image: url("https://coolbackgrounds.io/images/backgrounds/index/disco-dba865f1.png");
+    height: 100px;
+    color: white;
+    font-size: 20px;
+    top: 0;
+    position: sticky;
+    z-index: 1;
+}
+
+.header-div {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.header-name {
+    height: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.header-name span {
+    display: block;
+}
+
+.header-button {
+    display: flex;
+    justify-content: space-evenly;
+    width: 250px;
+}
+
+.header-button button {
+    height: 70px;
+    width: 70px;
+    background: #00cfff;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+.home {
+    background-color: #036583;
+    display: flex;
+    padding: 10vw;
+    /* padding: clamp(3rem,30vw,150px); */
+    /* padding: min(30vw,3rem); */
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    color: white;
+    font-family: monospace;
+    font-size: var(--content-font);
+}
+
+.content h1 {
+    color: #f1c879;
+    display: inline-block;
+    position: relative;
+    width: max-content;
+}
+
+.projects {
+    background-color: #078a71;
+    border: 1px solid #078a71;
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+.projects>h1 {
+    margin: 25px;
+    text-decoration: underline;
+    color: white;
+}
+
+.project-wrapper {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.project-info {
+    border-radius: 10px;
+    border: 2px solid grey;
+    width: clamp(300px,400px,400px);
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project-info:hover{
+    transform: translateY(10px);
+}
+
+.project-name {
+    background-color: #050948;
+    color: white;
+}
+
+.project-info h1 {
+    text-align: center;
+}
+
+
+.project-info .project-photo {
+    background-color: white;
+}
+
+.contact {
+    background-color: #303841;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-content {
+    height: 10vh;
+}
+
+.contact-content a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 2rem;
+    margin: 10px;
+    transform: translateY(0px);
+    transition: transform 0.3s ease;
+    border: 2px solid #f4f4f4;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+.contact-content a:hover {
+    transform: translateY(10px);
+}
+
+@media screen and (max-width:1257px) {
+    .project-wrapper{
+        flex-direction: column;   
+    }
+    .content{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:657px) {
+    .content{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .contact{
+        height: 300px;
+    }
+    header{
+        height: 190px;
+    }
+    .header-div{
+        flex-direction: column;
+        height: 120px;
+    }
+    .header-name{
+        width: 168px;
+        height: 60px;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width:460px) 
+{
+    .project-info{
+        width: 250px;
+        height: 300px;
+    }
+    .project-info img{
+        width: 250px;
+        height: 300px;
+    }
+    .project-wrapper{
+        height: 1550px;
+        align-items: space-between;
+    }
+    .content{
+        font-size: 14px;
+    }
+}
+
+
+
+
